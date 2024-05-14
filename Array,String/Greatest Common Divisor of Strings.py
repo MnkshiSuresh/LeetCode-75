@@ -1,4 +1,4 @@
-#Given two strings str1 and str2, return the largest string x such that x divides both str1 and str2.
+''' Given two strings str1 and str2, return the largest string x such that x divides both str1 and str2. '''
 
 def divisor(s1, s2):
     shortest_str = min(s1, s2, key=len)
