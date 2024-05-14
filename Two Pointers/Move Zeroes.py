@@ -1,6 +1,4 @@
-'''Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
-
-'''
+'''Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.'''
 
 def zeros(a):
     left = 0
