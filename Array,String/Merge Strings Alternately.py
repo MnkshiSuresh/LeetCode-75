@@ -1,16 +1,22 @@
 ''' You are given two strings word1 and word2. Merge the strings by adding letters in alternating order, starting with word1.
 If a string is longer than the other, append the additional letters onto the end of the merged string. '''
 
-def mergestrings(word1, word2):
-    merged = ""
-    max_len = max(len(word1), len(word2))
-    for i in range(max_len):
-        if i < len(word1):
-            merged += word1[i]
-        if i < len(word2):
-            merged += word2[i]
-    return merged
-
-word1 = "meenakshi"
-word2 = "annathomas"
-print(mergestrings(word1, word2))
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        m = len(word1)
+        n = len(word2)
+        i = 0
+        j = 0
+        result = []
+        
+        while i < m or j < n:
+            if i < m:
+                result.append(word1[i])
+                i += 1
+                
+            if j < n:
+                result.append(word2[j])
+                j += 1
+                
+        return "".join(result)
+    
