@@ -1,4 +1,4 @@
-   def findMaxAverage(nums, k):
+    def findMaxAverage(nums, k):
     n = len(nums)
     window_sum = sum(nums[:k])  
     max_sum = window_sum
